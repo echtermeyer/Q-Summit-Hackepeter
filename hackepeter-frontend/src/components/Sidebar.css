@@ -1,0 +1,65 @@
+/* Sidebar.css */
+.sidebar-container {
+    display: flex;
+    justify-content: flex-end; /* Richtet die Sidebar am rechten Rand aus */
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0; /* Positioniert den Container auf der rechten Seite */
+    width: 100%; /* Nimmt die volle Breite ein, um Flexbox-Ausrichtung zu ermöglichen */
+    height: 100%;
+    z-index: 100;
+    padding-right: 30px; /* 30px Abstand vom rechten Rand */
+    box-sizing: border-box; /* Stellt sicher, dass padding im width enthalten ist */
+    background-color: rgba(0, 0, 0, 0.1); /* Optional: Hintergrund-Overlay */
+    padding: 10px;
+  }
+  
+  .sidebar {
+    width: calc(30% - 30px); /* Passt die Breite an, um den Abstand von 30px zu berücksichtigen */
+    max-width: 600px; /* Optional: Definiert eine maximale Breite für die Sidebar */
+    max-height: 75vh;
+    position:relative;
+    top: 5vh;
+    min-width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    
+  }
+
+  
+  /* Stilisierung der Liste */
+  .sidebar ul {
+    list-style: none; /* Entfernt Bulletpoints von der Liste */
+    padding: 0; /* Entfernt den Standard-Innenabstand */
+    margin: 0; /* Entfernt den Standard-Außenabstand */
+  }
+  
+  .sidebar li {
+    padding: 10px 0; /* Etwas Abstand zwischen den Listeneinträgen */
+  }
+
+  .closed {
+    transform: translateX(100%); /* Verschiebt die Sidebar nach rechts, außerhalb des Bildschirms */
+  }
+  
+  .toggle-button {
+    position: fixed;
+    right: 30%; /* Passt die Position des Buttons an, damit er neben der Sidebar erscheint */
+    top: 40px; /* Etwas Abstand von der oberen Seite */
+    z-index: 100; /* Stellt sicher, dass der Button über der Sidebar liegt */
+  }
+  
+  /* Hier könntest du weitere Stilisierungen für Links oder hervorgehobene Einträge hinzufügen */
+  
+  .custom-h3 {
+    font-size: 24px; /* Oder eine andere Größe, die du bevorzugst */
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  

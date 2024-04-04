@@ -1,0 +1,33 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure the header is full width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centers items vertically in the header */
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+  background: #ffffff; /* Ensure text readability by setting a background color */
+  z-index: 1000; /* Ensure the header is above other content */
+}
+
+.header-logo .company-icon {
+  width: auto; /* Adjust the size as needed */
+  height: 100px;
+  padding-top: 1.2em;
+  padding-bottom: 0.8em;
+}
+
+.q-logo .company-icon {
+  width: auto; /* Adjust the size as needed */
+  height: 100px;
+  padding-top: 0.6em;
+  padding-bottom: 0.8em;
+}
+
+.header-nav {
+  display: flex;
+  gap: 30px; /* Adjust the gap between links as needed */
+  align-items: center; /* Ensure nav items are vertically centered */
+}

@@ -1,0 +1,21 @@
+.react-flow .react-flow__handle {
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  
+  .floatingedges .react-flow__handle {
+    opacity: 0;
+  }
+
+  .react-flow__node {
+    /* Enhanced drop shadow for nodes */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Increased blur radius and opacity for a more pronounced shadow */
+    /* Background color for the nodes */
+    background-color: #ecf0f1; /* Light gray */
+    /* Border style, color, and thickness for the nodes */
+    border: 3px solid #bdc3c7; /* 3px solid border in gray */
+}

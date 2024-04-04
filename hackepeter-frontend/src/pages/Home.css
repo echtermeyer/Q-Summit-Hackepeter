@@ -1,0 +1,76 @@
+.content {
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.input-container {
+  width: 70vw;
+  display: flex;
+  left: 15vw;
+  justify-content: space-between;
+}
+
+.input-container input {
+  width: 100%;
+}
+
+.input-container button {
+  margin-left: 10px; /* Platzierung des Buttons rechts neben der Suchleiste */
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5vw;
+  padding: 5vw;
+  width: 100%; 
+  justify-content: center;
+  align-items: center;
+}
+
+.firstColumn {
+  flex: 0 0 30vw; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondColumn {
+  flex: 0 0 35vw; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: flex-start; 
+}
+
+#tollerText {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.customMargin {
+  margin-top: 3vw;
+}
+
+.flexedBackground {
+  padding: 3vw;
+  background-color: #191733;
+}
+
+.flexedBackground2 {
+  padding: 3vw;
+  margin-bottom: -5vw;
+  background-color: #191733;
+}
+
+.minusMargin {
+  margin-top: -2vw;
+  margin-bottom: -7vw;
+}
